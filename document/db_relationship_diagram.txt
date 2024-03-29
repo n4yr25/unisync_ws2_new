@@ -1,0 +1,51 @@
+INSTRUCTOR_ACCOUNT
+  - ins_id (pk)
+  - email
+  - password
+  - firstname
+  - lastname
+  
+
+STUDENT_ACCOUNT
+  - stud_id (pk)
+  - email
+  - password
+  - firstname
+  - lastname
+  - course
+  - section
+  - yearlevel
+  - address
+
+STUDENT_SUBJECT
+  - stud_subj_id (pk)
+  - stud_id (fk)
+  - ins_id (fk)
+  - subj_code
+
+MEET
+  - meet_id (pk)
+  - stud_id (fk)
+  - ins_id (fk)
+  - stud_subj_id (fk)
+  - eval_id (fk)
+  - date
+  - time
+  - status
+
+EVALUATION
+  - eval_id (pk)
+  - ques_id
+  - comment
+
+QUESTION 
+  - ques_id
+  - ques_desc
+
+SUBJECT
+  - subj_code
+  - subj_name
+  - unit
+
+
+
