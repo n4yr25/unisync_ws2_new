@@ -1,6 +1,9 @@
-body {
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    font-family: "Lato", sans-serif;
+    padding: 0;
+    font-size: 14px; /* Smaller font size */
   }
   
   .sidebar {
@@ -125,4 +128,62 @@ body {
             height: 20px;
             width: 20px;
         }
+}
+
+/* login register */
+
+.card {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 5px rgba(0, 238, 255, 0.5); /* Adjusted box-shadow */
+  background-size: cover;
+  padding: 0px;
+}
+
+.container {
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#2079ff;
+  font-size: 1.2em; /* Smaller font size */
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.8em; /* Smaller font size */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #20B1FF;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 0.8em; /* Smaller font size */
+}
+
+button {
+  background-color: #20B1FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.0em; /* Make the font size smaller */
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #2079ff;
 }

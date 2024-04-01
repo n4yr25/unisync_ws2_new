@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniSync | Login</title>
+    <title>UniSync | Register</title>
     <script src="js/script.js"></script>
     <script src="js/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +36,7 @@
         }
 
         .additional-info img {
-            padding-top: 20px;
+            padding-top: 50px;
             padding-bottom: 10px;
             max-width: 100%;
             max-height: 80px;
@@ -72,13 +73,21 @@
             color: white;
             font-size: 12px;
         }
+
+        .a {
+            color: yellow;
+        }
+        #addition{
+            color: white;
+        }
     </style>
 </head>
+
 <body>
     <div class="card">
         <div class="container">
-            <h2>LOGIN FORM</h2>
-            <form id="loginForm" method="post" action="login.php">
+            <h2>REGISTRATION FORM</h2>
+            <form method="post">
                 <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
@@ -87,13 +96,44 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="button" onclick="loginUser()">LOGIN</button>
+                <div>
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div>
+                    <label for="section">Section:</label>
+                    <input type="text" id="section" name="section" required>
+                </div>
+                <div>
+                    <label for="yearlevel">Year Level:</label>
+                    <select id="yearlevel" name="yearlevel" required>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <button type="button" onclick="registerUser()">REGISTER</button>
             </form>
         </div>
         <div class="additional-info">
-    <img src="images/unisync.png" alt="Example Image">
-    <label id="sentence"><br>Sign in now for personalized educational support from our expert instructors. Elevate your learning journey with exclusive resources and interactive sessions. Log in today to take control of your education!</label>
-    <p style="color: white;">If you haven't registered yet, <a href="register_form.php" style="color: yellow;">Sign up</a> to register.</p>
-<?php
-    include('includes/footer.php');
-?>
+            <img src="images/unisync.png" alt="Example Image">
+            <label id="sentence" style="color: white;"><br> Register now for personalized educational consultation with our expert instructors and elevate your learning journey!</label>
+            <p style="color: white;">If you are already registered, <a href="index.php" style="color: yellow;">Login</a> to get started.</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
