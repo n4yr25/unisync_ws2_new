@@ -1,0 +1,50 @@
+.card {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 4px rgba(223, 223, 223, 0.203);
+    background-size: cover;
+    padding: 10px;
+    margin-top: 100px;
+    height: 240px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #20B1FF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+  }
+
+  #button {
+    background-color: #20B1FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.0em; 
+    font-weight: 700;
+  }
+  
+  #button:hover {
+    background-color: #2079ff;
+  }
+  
+  #form-container{
+    padding: 20px;
+    padding-top: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1px;
+    color:#2079ff;
+    font-size: 2.0em; 
+  }

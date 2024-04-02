@@ -1,0 +1,52 @@
+/* Profile.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card styles */
+.card {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

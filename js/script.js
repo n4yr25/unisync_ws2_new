@@ -22,7 +22,7 @@ function loginUser() {
                 window.location.replace("teams.php");
             }
             else {
-                alert('Account no exist!');
+                alert('Account not exist!');
             }
         }
     });
